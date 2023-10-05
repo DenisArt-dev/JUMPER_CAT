@@ -1,0 +1,281 @@
+
+.gameOver {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background_Now,
+.background_Old {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+
+    top: 0;
+    left: 0;
+
+}
+
+.beforeGame {
+    position: absolute;
+    z-index: 100;
+    background: linear-gradient(to bottom, #301000, #000000);
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beforeGame_bar {
+    position: relative;
+    border: solid 2px #fff;
+    overflow: hidden;
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+}
+
+.beforeGame_runner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* border-radius: 50px; */
+    right: 0;
+    animation: runnerAnimation 10s linear;
+}
+
+.beforeGame_text {
+    color: #fff;
+    margin: 5px;
+    font-weight: 100;
+}
+
+@keyframes runnerAnimation {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+
+
+
+
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+.startWindow {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.startWindow h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px;
+    background-color: #e766105c;
+}
+
+.startWindow__buttonStart {
+    font-size: 30px;
+    background-color: var(--color1);
+    color: var(--color0);
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-weight: 100;
+    border: none;
+    transition: all 0.5s;
+}
+
+.startWindow__buttonStart:hover {
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.startWindow__wrappMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: 300px;
+}
+
+.startWindow__mode {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 7px #000;
+    font-weight: 100;
+}
+
+.startWindow__mode-select {
+    height: 300px;
+    width: 300px;
+    font-size: 50px;
+}
+
+.startWindow__f11 {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 24px;
+    color: var(--color0);
+    background-color: #e766105c;
+}
+
+.startWindow__f11 span {
+    font-weight: 800;
+}
+
+.game {
+    overflow: hidden;
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border-left: solid 3px #fff;
+    border-right: solid 3px #fff;
+}
+
+.gameContent {
+    display: flex;
+    flex-flow: column-reverse;
+    position: relative;
+}
+
+.gameWrapp {
+    margin: auto;
+}
+
+.gameHeader {
+
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+
+    font-size: 18px;
+    color: var(--color0);
+}
+
+.gameHeader_content {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gameHeader_content-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+
+.gameHeader_content-info p {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.gameHeader_button {
+    border: solid 1px var(--color0);
+    color: var(--color0);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.gameHeader_button:hover {
+    color: black;
+    background-color: var(--color0);
+}
+
+.gameHeader svg {
+    fill: var(--color0);
+}
+
+
+.title_life {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerLife svg {
+    margin: 5px;
+}
+
+.gameNav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+}
+
+.gameNav button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+    margin: 5px;
+}
+
+.gameNav button:hover {
+    background-color: var(--color3);
+    cursor: pointer;
+}
+
+.gameNav button p {
+    font-size: 45px;
+}
+
+
+.backgroundMain {
+    width: 100%;
+    height: 22167px;
+    position: absolute;
+}
