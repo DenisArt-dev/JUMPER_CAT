@@ -243,7 +243,7 @@ function App() {
             {/* <div onClick={() => { setSelectMode(2) }} data-id={2} className={[selectMode === 2 ? `${AppStyle['startWindow__mode-select']} ${AppStyle['startWindow__mode']}` : AppStyle['startWindow__mode']].join(' ')}></div> */}
           </div>
 
-          <div><button onClick={() => { start(selectMode, setMode) }} className={AppStyle['startWindow__buttonStart']}>Начать</button></div>
+          <div><button onClick={() => { start(selectMode, setMode) }} className={AppStyle['startWindow__buttonStart']}>Start</button></div>
 
         </div>}
       {mode > -1 && <div className={AppStyle['gameWrapp']}>

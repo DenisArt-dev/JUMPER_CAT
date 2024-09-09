@@ -57,6 +57,9 @@ export default class GameFild {
         // if (this.gameMode === 1) this.backgroundMain = true;
 
         if (!this.backgroundMain) setTimeout( () => { this.changeBackground() }, 6000);
+        window.addEventListener('resize', () => {
+            this.height = window.innerHeight;
+        });
 
     }
 
